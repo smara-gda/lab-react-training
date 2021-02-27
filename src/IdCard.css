@@ -1,0 +1,23 @@
+.IdCard-Cards{
+    background-color: white;
+    display: flex;
+    margin: 0.5em;
+    width: 70%;
+    
+}
+.IdCard-Cards li{
+    color: black;
+    list-style-type:none;
+    text-align: left;
+    font-size: medium;
+    
+    
+}
+
+
+.IdCard-Cards img{
+ object-fit: cover;
+  width: 5em;
+  height: 6em;
+  padding: 0.5em;
+}
