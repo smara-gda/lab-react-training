@@ -1,0 +1,11 @@
+.Random-wrapper{
+    text-align: left;
+    color: black;
+    background-color: white;
+   
+}
+
+.Random-wrapper p{
+    padding: 0;
+    margin: 0.2em;
+}

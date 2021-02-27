@@ -4,7 +4,9 @@ import './App.css';
 import IdCard from './IdCard.jsx';
 import './IdCard.css';
 import './Greetings.css';
+import './Random.css';
 import Greetings from './Greetings';
+import Random from './Random';
 
 function App() {
   return (
@@ -31,6 +33,10 @@ function App() {
       <div>
          <Greetings lang="el">Σμαράγδα</Greetings>
          <Greetings lang="fr">François</Greetings>
+     </div>
+     <div> 
+       <Random min={4} max={6} />
+       <Random min={124} max={1000} />
      </div>
       </header>
     </div>
