@@ -1,0 +1,14 @@
+.CreditCard-Container{
+    flex-direction: row;
+    flex-wrap: nowrap;
+    display: flex;
+
+}
+.CreditCard-cards{
+    border: 1px white solid;
+    width: 18em;
+    height: 12em;
+    margin: 1em;
+    font-size: 18px;
+    
+}
