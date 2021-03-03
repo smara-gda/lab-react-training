@@ -1,5 +1,5 @@
 import React from 'react';
-
+// iteration 9
 class ClickablePicture extends React.Component {
     constructor(props){
         super(props)
