@@ -12,12 +12,11 @@ import IdCard from './IdCard.jsx';
 import CreditCard from './CreditCard.jsx';
 import LikeButton from './LikeButton.jsx';
 import Rating from './Rating.jsx';
+import DriverCard from './DriverCard.jsx';
 
 function App() {
   return (
     <div className="App">
-  
-    
        <IdCard
          lastName='Doe'
          firstName='John'
@@ -25,7 +24,7 @@ function App() {
          height={178}
          birth={new Date(1992,6,15)}
          picture="https://randomuser.me/api/portraits/men/44.jpg"
-     />
+       />
 
      <IdCard
          lastName='Smaragda'
@@ -34,7 +33,7 @@ function App() {
          height={158}
          birth={new Date(1988,9,30)}
          picture="https://randomuser.me/api/portraits/women/44.jpg"
-     />
+      />
       <div>
          <Greetings lang="el">Σμαράγδα</Greetings>
          <Greetings lang="fr">François</Greetings>
@@ -87,15 +86,23 @@ function App() {
           <Rating> 4 </Rating>
           <Rating> 5 </Rating>
        </div>
+
+       <div>
+       <DriverCard
+          name="Travis Kalanick"
+          rating={4.2}
+          img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
+          car={{model: "Toyota Corolla Altis",licensePlate: "CO42DE"}} />
+       <DriverCard
+          name="Dara Khosrowshahi"
+          rating={4.9}
+          img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
+          car={{model: "Audi A3",licensePlate: "BE33ER"}} />
+       </div>
        <div>
           <LikeButton /> <LikeButton />
        </div>
     </div>
-  
-
-
-
-
   );
 }
 
