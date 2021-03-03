@@ -10,11 +10,13 @@ import Random from './Random';
 import BoxColor from './BoxColor';
 import IdCard from './IdCard.jsx';
 import CreditCard from './CreditCard.jsx';
+import LikeButton from './LikeButton.jsx';
+import Rating from './Rating.jsx';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+  
     
        <IdCard
          lastName='Doe'
@@ -46,6 +48,7 @@ function App() {
          <BoxColor r={255} g={0} b={0} />
          <BoxColor r={128} g={255} b={0} />
        </div>
+      
       <div className='CreditCard-Container'> 
       <CreditCard
          type="Visa"
@@ -74,12 +77,19 @@ function App() {
          owner="Firstname Lastname"
          bgColor="#ddbb55"
          color="white" />
-
-
-
       </div>
-
-      </header>
+     
+       <div>
+          <Rating> 0 </Rating>
+          <Rating> 1.49 </Rating>
+          <Rating> 1.5 </Rating>
+          <Rating> 3 </Rating>
+          <Rating> 4 </Rating>
+          <Rating> 5 </Rating>
+       </div>
+       <div>
+          <LikeButton /> <LikeButton />
+       </div>
     </div>
   
 
